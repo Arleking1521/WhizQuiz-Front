@@ -1,0 +1,5 @@
+export const HOME_ROUTE = "/"
+export const RULES_ROUTE = "/rules"
+export const COMMENTS_ROUTE = "/comment"
+export const ABOUT_ROUTE = "/about"
+export const DETAILS_ROUTE = "/details"

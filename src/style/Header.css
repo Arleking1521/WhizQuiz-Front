@@ -1,0 +1,67 @@
+*{
+    font-family: 'Montserrat', serif;
+}
+
+.header{
+    background: linear-gradient(to top left, rgb(200, 0, 0), rgb(100, 0, 0));
+    box-shadow: 0px 3px 20px rgba(0, 0, 0, 0.377);
+    margin-bottom: 20px;
+}
+.menu{
+    font-size: 20px;
+    height: 100px;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    align-items: center;
+}
+.menu a{
+    color: white;
+    font-weight: bolt;
+    text-decoration: none;
+    padding: 10px 15px;
+}
+.h-name{
+    letter-spacing: 5px;
+    color: white;
+    font-size: 50px;
+    font-style: italic;
+    font-weight: bold;
+    margin: 0px;
+    text-align: right;
+}
+.socmed{
+    width: 100%;
+    position: relative;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-self: center;
+    border-bottom: 1px solid white;
+}
+.socmed a{
+    text-decoration: none;
+    color: white;
+    font-weight: 900;
+}
+.wpp, .insta, .vk{
+    position: relative;
+    width: 200px;
+    display: flex;
+    justify-content: center;
+}
+.wpp_img, .insta_img, .vk_img{
+    position: relative;
+    width: 15%;
+}
+.main_m{
+    width:100%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+}
+.top{
+    display: flex;
+    flex-direction: column;
+}
