@@ -48,10 +48,12 @@
     z-index:9;
     box-shadow: 10px 10px 0px rgb(240, 0, 0), -10px -10px 0px rgb(150, 0, 0);
 }
-.games:active{
-    transform: scale(2.0);
-    overflow: hidden;
-    z-index:9999;
+.gameItem{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    height: 400px;
 }
 .game{
     width: 100%;

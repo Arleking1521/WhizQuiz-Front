@@ -48,7 +48,7 @@ const Header = () => {
                                 <Nav className='menu'>
                                     <Nav.Link as={Link} to={HOME_ROUTE} > HOME </Nav.Link>
                                     <Nav.Link as={Link} to={RULES_ROUTE}> RULES </Nav.Link>
-                                    <Nav.Link as={Link} to={COMMENTS_ROUTE}> PHOTOS </Nav.Link>
+                                    <Nav.Link as={Link} to={COMMENTS_ROUTE}> COMMENTS </Nav.Link>
                                     <Nav.Link as={Link} to={ABOUT_ROUTE}> ABOUT US </Nav.Link>
                                 </Nav>
                             </Navbar.Collapse>

@@ -19,7 +19,7 @@ const Footer = () => {
                         <Navbar>
                             <Nav.Link as={Link} to={HOME_ROUTE}> Home </Nav.Link>|
                             <Nav.Link as={Link} to={RULES_ROUTE}> Rules </Nav.Link>|
-                            <Nav.Link as={Link} to={COMMENTS_ROUTE}> Photos </Nav.Link>|
+                            <Nav.Link as={Link} to={COMMENTS_ROUTE}> Comments </Nav.Link>|
                             <Nav.Link as={Link} to={ABOUT_ROUTE}> About Us </Nav.Link>
                         </Navbar>
                     </div>

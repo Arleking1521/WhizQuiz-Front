@@ -1,15 +1,21 @@
-import React from 'react';
+import React, {useEffect, useState} from 'react';
 import Logo from "../assets/logoWhizQuiz.jpg";
 import {Container} from "react-bootstrap";
 import "../style/home.css"
-
-import HP from "../assets/Harry.jpg"
-import Marvel from "../assets/Marvel.jpg"
-import LoRaH from "../assets/LordOfRings.jpg"
-import Avatar from "../assets/AvatarA.jpg"
-import PopUp from "../components/PopUp";
+import GamesService from "../API/GamesService";
+import GamesList from "../components/GamesList";
 
 const HomePage = () => {
+    const [games, setGames] = useState([])
+    async function fetchGames(){
+        const games = await  GamesService.getAll()
+        setGames(games)
+    }
+
+    useEffect( () => {
+        fetchGames()
+    }, [])
+
     return (
         <Container className='main'>
             <div className='name_logo'>
@@ -24,22 +30,7 @@ const HomePage = () => {
                     <img src={Logo} className='home_logo'/>
                 </div>
             </div>
-            <div className="future_games">
-              <div className="f_games">GAMES:</div>
-              <div className="games_all">
-                <div className="games"><img src={HP} className="game" /></div>
-                <div className="games"><img src={Marvel} className="game" /></div>
-                <div className="games"><img src={LoRaH} className="game" /></div>
-                <div className="games"><img src={Avatar} className="game" /></div>
-              </div>
-              <div className='buttons'>
-                <PopUp name='Harry Potter' />
-                <PopUp name='Marvel' />
-                <PopUp name='Lord of rings & Hobbits' />
-                <PopUp name='Avatar: Legend about Aang' />
-              </div>
-
-            </div>
+            <GamesList games={games}/>
 
 
         </Container>

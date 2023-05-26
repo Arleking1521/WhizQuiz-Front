@@ -1,6 +1,5 @@
 import React from 'react';
 import "../style/About.css"
-import Logo from "../assets/logoWhizQuiz.jpg"
 import {Placemark, YMaps, Map} from "react-yandex-map";
 const AboutPage = () => {
     return (
@@ -10,12 +9,15 @@ const AboutPage = () => {
                     <h1 className="name ash">EAZY QUIZY</h1>
                     <div className="map frdivst">
                         <YMaps>
-                            <Map defaultState={{center: [43.235009, 76.909964], zoom: 17}}
-                                 style={{ width: '100%', height: '400px' }}>
-                                <Placemark geometry={[43.235009, 76.909964]}/></Map>
+                            <Map
+                                defaultState={{center: [43.235009, 76.909964], zoom: 17}}
+                                style={{ width: '100%', height: '400px' }}
+                            >
+                                <Placemark geometry={[43.235009, 76.909964]}/>
+                            </Map>
                         </YMaps>
                     </div>
-                    <p>Almaty, 34A Manas str.</p>
+                    <p>Almaty, 34A Manase str.</p>
                 </div>
 
             </div>

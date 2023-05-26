@@ -4,7 +4,6 @@ import heart from '../assets/heart-outline.svg'
 import chat from '../assets/chatbubbles-outline.svg'
 import phone from '../assets/phone-portrait-outline.svg'
 import doc from '../assets/document-outline.svg'
-import Logo from '../assets/logo.png'
 const RulesPage = () => {
     return (
         <main>
