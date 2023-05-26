@@ -1,13 +1,12 @@
 import React from 'react';
 
-import {Container, Nav, Navbar} from "react-bootstrap";
-import {Link} from "react-router-dom";
+import {Container, Navbar} from "react-bootstrap";
 import wpp from '../assets/wpp_w.png'
 import inst from '../assets/inst_w.png'
 import vk from '../assets/vk_w.png'
 
 import "../style/Header.css"
-import {ABOUT_ROUTE, COMMENTS_ROUTE, HOME_ROUTE, RULES_ROUTE} from "../utils/const";
+import NavBar from "../UI/NavBar/NavBar";
 
 const Header = () => {
     return (
@@ -44,14 +43,7 @@ const Header = () => {
                             </Navbar.Brand>
                         </div>
                         <div>
-                            <Navbar.Collapse id='responsive-navbar-nav' align-right>
-                                <Nav className='menu'>
-                                    <Nav.Link as={Link} to={HOME_ROUTE} > HOME </Nav.Link>
-                                    <Nav.Link as={Link} to={RULES_ROUTE}> RULES </Nav.Link>
-                                    <Nav.Link as={Link} to={COMMENTS_ROUTE}> COMMENTS </Nav.Link>
-                                    <Nav.Link as={Link} to={ABOUT_ROUTE}> ABOUT US </Nav.Link>
-                                </Nav>
-                            </Navbar.Collapse>
+                            <NavBar/>
                         </div>
                         <Navbar.Toggle aria-controls='responsive-navbar-nav' />
                     </div>

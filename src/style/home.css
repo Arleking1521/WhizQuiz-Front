@@ -19,6 +19,13 @@
     font-size: 25px;
     padding-left: 30px;
 }
+
+.load{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+
 .future_games{
     min-height: 600px;
     width: 100%;

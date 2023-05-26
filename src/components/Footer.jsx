@@ -1,12 +1,11 @@
 import React from 'react';
-import {Nav, Navbar} from "react-bootstrap";
+import {Navbar} from "react-bootstrap";
 import wpp_f from '../assets/wpp.png'
 import inst_f from '../assets/inst.png'
 import vk_f from '../assets/vk.png'
 import Logo from '../assets/logoWhizQuiz.jpg'
 import {Link} from "react-router-dom";
 import "../style/Footer.css"
-import {ABOUT_ROUTE, COMMENTS_ROUTE, HOME_ROUTE, RULES_ROUTE} from "../utils/const";
 
 const Footer = () => {
     return (
@@ -16,12 +15,12 @@ const Footer = () => {
                     <div className="foot_logo"><img src={Logo} alt="" /></div>
                     <div className="li_text">
                         <p>© 2023. WhizQuiz Inc.</p>
-                        <Navbar>
-                            <Nav.Link as={Link} to={HOME_ROUTE}> Home </Nav.Link>|
-                            <Nav.Link as={Link} to={RULES_ROUTE}> Rules </Nav.Link>|
-                            <Nav.Link as={Link} to={COMMENTS_ROUTE}> Comments </Nav.Link>|
-                            <Nav.Link as={Link} to={ABOUT_ROUTE}> About Us </Nav.Link>
-                        </Navbar>
+                        <div>
+                            <Link to={'/home'}> Home </Link>|
+                            <Link to={'/rules'}> Rules </Link>|
+                            <Link to={'/comments'}> Comments </Link>|
+                            <Link to={'/about'}> About Us </Link>
+                        </div>
                     </div>
                 </div>
                 <div>

@@ -4,13 +4,15 @@ import {Container} from "react-bootstrap";
 import "../style/home.css"
 import GamesService from "../API/GamesService";
 import GamesList from "../components/GamesList";
+import Loader from "../UI/Loader/Loader";
+import {useFetching} from "../hookes/useFetching";
 
 const HomePage = () => {
     const [games, setGames] = useState([])
-    async function fetchGames(){
+    const [fetchGames, isGamesLoading, gamesError] = useFetching(async () => {
         const games = await  GamesService.getAll()
         setGames(games)
-    }
+    })
 
     useEffect( () => {
         fetchGames()
@@ -30,7 +32,13 @@ const HomePage = () => {
                     <img src={Logo} className='home_logo'/>
                 </div>
             </div>
-            <GamesList games={games}/>
+            {
+                gamesError && <div className="load">${gamesError}</div>
+            }
+            {isGamesLoading ? <div className="load"><Loader/></div> :
+                games.length ? <GamesList games={games}/> : <div className="f_games">Нет заплатированных игр!</div>
+            }
+
 
 
         </Container>
