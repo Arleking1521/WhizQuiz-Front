@@ -6,7 +6,7 @@ import inst from '../assets/inst_w.png'
 import vk from '../assets/vk_w.png'
 
 import "../style/Header.css"
-import NavBar from "../UI/NavBar/NavBar";
+import NavBar from "./NavBar";
 
 const Header = () => {
     return (

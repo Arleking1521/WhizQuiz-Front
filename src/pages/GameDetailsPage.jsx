@@ -16,7 +16,6 @@ const GameDetailsPage = () => {
     useEffect(() =>{
         fetchGameById(params.id);
     }, [])
-    console.log(game);
     return (
         <div >
             {isLoading ? <div className="load"><Loader/></div> :

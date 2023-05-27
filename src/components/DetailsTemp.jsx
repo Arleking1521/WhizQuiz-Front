@@ -2,7 +2,6 @@ import React from 'react';
 import "../style/Details.css"
 import RegPopUp from "./RegPopUp";
 const DetailsTemp = (props) => {
-    console.log(props);
     return (
         <div className="details">
             <div className="welcome_banner">Добро пожаловать на квиз!</div>
