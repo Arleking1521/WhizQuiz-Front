@@ -1,32 +1,35 @@
 
-.frame{
-    position:relative;
+.frame {
+    position: relative;
 }
-.aframe1
-{
-    color:#eee;
-    font-size:12px;
-    position:absolute;
-    top:0px;
+
+.aframe1 {
+    color: #eee;
+    font-size: 12px;
+    position: absolute;
+    top: 0px;
 }
-.aframe2{
-    color:#eee;
-    font-size:12px;
-    position:absolute;
-    top:14px;
+
+.aframe2 {
+    color: #eee;
+    font-size: 12px;
+    position: absolute;
+    top: 14px;
 }
-.frdivst{
-    position:relative;
-    overflow:hidden;
+
+.frdivst {
+    position: relative;
+    overflow: hidden;
     width: 560px;
     height: 400px;
     margin: 20px
 }
-.map{
+
+.map {
     box-shadow: 10px 10px 0px rgb(247, 161, 2), -10px -10px 0px rgb(199, 0, 0);
 }
 
-.contact{
+.contact {
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -34,9 +37,10 @@
     padding-bottom: 30px;
 }
 
-.ash{
+.ash {
     margin-top: 0px;
 }
-.fs{
+
+.fs {
     font-Size: 70px;
 }

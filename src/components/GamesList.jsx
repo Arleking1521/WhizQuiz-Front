@@ -8,7 +8,7 @@ const GamesList = ({games}) => {
             <div className="games_all">
                 {games.map((game) =>
                     <GamesItem game={game} key={game.id}/>
-                    )}
+                )}
             </div>
         </div>
     );

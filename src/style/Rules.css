@@ -1,4 +1,4 @@
-.rul{
+.rul {
     display: flex;
     height: 50px;
     align-items: center;
@@ -6,19 +6,22 @@
     margin: 25px;
     color: rgb(200, 150, 0);
 }
-.top_rul{
+
+.top_rul {
     display: flex;
     flex-direction: column;
     justify-content: space-between;
     align-items: center;
 }
-.rules{
+
+.rules {
     display: flex;
     flex-wrap: wrap;
     height: 200px;
     width: 700px;
 }
-.big_r{
+
+.big_r {
     font-weight: 900;
     font-size: 150px;
     margin: 0;
@@ -26,19 +29,23 @@
     text-align: center;
     text-decoration: underline;
 }
-.itl{
+
+.itl {
     font-style: italic;
     font-weight: bold;
 }
-.shadow1{
+
+.shadow1 {
     color: rgb(150, 0, 0);
     text-shadow: 3px 3px 0px rgba(240, 0, 0, 0.6);
 }
-.mg_shadow{
+
+.mg_shadow {
     color: rgb(150, 0, 0);
     text-shadow: 8px 8px 0px rgb(240, 0, 0);
 }
-.aimge{
+
+.aimge {
     float: left;
     margin-right: 20px
 }

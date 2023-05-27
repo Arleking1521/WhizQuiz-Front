@@ -1,6 +1,7 @@
 import React from 'react';
 import "../style/About.css"
 import {Placemark, YMaps, Map} from "react-yandex-map";
+
 const AboutPage = () => {
     return (
         <main>
@@ -11,7 +12,7 @@ const AboutPage = () => {
                         <YMaps>
                             <Map
                                 defaultState={{center: [43.235009, 76.909964], zoom: 17}}
-                                style={{ width: '100%', height: '400px' }}
+                                style={{width: '100%', height: '400px'}}
                             >
                                 <Placemark geometry={[43.235009, 76.909964]}/>
                             </Map>
@@ -22,9 +23,9 @@ const AboutPage = () => {
 
             </div>
             <div className="contact">
-            <h1 className="name ash fs">НАШИ КОНТАКТЫ:</h1>
-            <p>E-mail: WhizQuiz@quiz.com</p>
-            <p>Телефон: +7 (707) 998-02-68</p>
+                <h1 className="name ash fs">НАШИ КОНТАКТЫ:</h1>
+                <p>E-mail: WhizQuiz@quiz.com</p>
+                <p>Телефон: +7 (707) 998-02-68</p>
             </div>
         </main>
     );

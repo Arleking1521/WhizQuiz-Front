@@ -9,11 +9,11 @@ import GameDetailsPage from "../pages/GameDetailsPage";
 const AppRouter = () => {
     return (
         <Routes>
-            <Route exact path={'/'} element={<HomePage />} />
-            <Route exact path={'/rules'} element={<RulesPage />} />
-            <Route exact path={'/comments'} element={<CommentsPage />} />
-            <Route exact path={'/about'} element={<AboutPage />} />
-            <Route exact path={'/details/:id'} element={<GameDetailsPage />} />
+            <Route exact path={'/'} element={<HomePage/>}/>
+            <Route exact path={'/rules'} element={<RulesPage/>}/>
+            <Route exact path={'/comments'} element={<CommentsPage/>}/>
+            <Route exact path={'/about'} element={<AboutPage/>}/>
+            <Route exact path={'/details/:id'} element={<GameDetailsPage/>}/>
         </Routes>
     );
 };

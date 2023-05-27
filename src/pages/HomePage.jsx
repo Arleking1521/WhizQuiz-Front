@@ -11,11 +11,11 @@ import {useFetching} from "../hookes/useFetching";
 const HomePage = () => {
     const [games, setGames] = useState([])
     const [fetchGames, isGamesLoading, gamesError] = useFetching(async () => {
-        const games = await  GamesService.getAll()
+        const games = await GamesService.getAll()
         setGames(games)
     })
 
-    useEffect( () => {
+    useEffect(() => {
         fetchGames()
     }, [])
 
@@ -23,11 +23,12 @@ const HomePage = () => {
         <Container className='main'>
             <div className='name_logo'>
                 <div>
-                    <div className="name" >Что такое квизы?</div>
+                    <div className="name">Что такое квизы?</div>
                     <p className='Wiaq'>
                         В двух словах, это интеллектуальное и развлекательное соревнование.
                         Тематическая, классическая, музыкальная, киношная или спортивная викторина.
-                        Вам задают вопросы, и вы на них отвечаете, чем больше правильных ответов, тем больше шансов на победу.</p>
+                        Вам задают вопросы, и вы на них отвечаете, чем больше правильных ответов, тем больше шансов на
+                        победу.</p>
                 </div>
                 <div>
                     <img src={Logo} className='home_logo'/>
@@ -39,7 +40,6 @@ const HomePage = () => {
             {isGamesLoading ? <div className="load"><Loader/></div> :
                 games.length ? <GamesList games={games}/> : <div className="f_games">Нет заплатированных игр!</div>
             }
-
 
 
         </Container>

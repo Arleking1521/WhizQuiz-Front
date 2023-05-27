@@ -1,4 +1,4 @@
-.myBtn{
+.myBtn {
     padding: 0 20px 0 20px;
     border-radius: 25px;
     border: none;
@@ -12,7 +12,7 @@
     transition: 0.5s;
 }
 
-.myBtn:hover{
+.myBtn:hover {
     background: rgb(240, 0, 0);
     color: black;
 }

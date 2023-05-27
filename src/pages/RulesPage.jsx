@@ -4,6 +4,7 @@ import heart from '../assets/heart-outline.svg'
 import chat from '../assets/chatbubbles-outline.svg'
 import phone from '../assets/phone-portrait-outline.svg'
 import doc from '../assets/document-outline.svg'
+
 const RulesPage = () => {
     return (
         <main>
@@ -14,10 +15,16 @@ const RulesPage = () => {
                     <p className="itl">Самое главное для нас - это чтобы вы хорошо провели время</p>
                     <p className="itl">Кроме того, не забывайте</p>
                     <div className="rules">
-                        <div className="rul"><img src={heart} alt="" width="40px" className='aimge' /> НЕ МЕШАЙТЕ ДРУГИМ ИГРОКАМ</div>
-                        <div className="rul"><img src={chat} alt="" width="40px" className='aimge' /> НЕ ВЫКРИКИВАЙТЕ ОТВЕТЫ</div>
-                        <div className="rul"><img src={phone} alt="" width="40px" className='aimge' /> НЕ ПОЛЬЗОВАТЬСЯ КАЛЬКУЛЯТОРАМИ И ДРУГИМИ ГАДЖЕТАМИ</div>
-                        <div className="rul"><img src={doc} alt="" width="40px" className='aimge' /> НЕ СПИСЫВАТЬ</div>
+                        <div className="rul"><img src={heart} alt="" width="40px" className='aimge'/> НЕ МЕШАЙТЕ ДРУГИМ
+                            ИГРОКАМ
+                        </div>
+                        <div className="rul"><img src={chat} alt="" width="40px" className='aimge'/> НЕ ВЫКРИКИВАЙТЕ
+                            ОТВЕТЫ
+                        </div>
+                        <div className="rul"><img src={phone} alt="" width="40px" className='aimge'/> НЕ ПОЛЬЗОВАТЬСЯ
+                            КАЛЬКУЛЯТОРАМИ И ДРУГИМИ ГАДЖЕТАМИ
+                        </div>
+                        <div className="rul"><img src={doc} alt="" width="40px" className='aimge'/> НЕ СПИСЫВАТЬ</div>
                     </div>
                 </div>
             </div>

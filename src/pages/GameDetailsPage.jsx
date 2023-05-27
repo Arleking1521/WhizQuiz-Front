@@ -9,15 +9,15 @@ import "../style/Load.css"
 const GameDetailsPage = () => {
     const params = useParams()
     const [game, setGame] = useState({});
-    const [fetchGameById, isLoading, error] = useFetching(async () =>{
+    const [fetchGameById, isLoading, error] = useFetching(async () => {
         const response = await GamesService.getById(params.id)
         setGame(response.data);
     })
-    useEffect(() =>{
+    useEffect(() => {
         fetchGameById(params.id);
     }, [])
     return (
-        <div >
+        <div>
             {isLoading ? <div className="load"><Loader/></div> :
                 <div>
                     <DetailsTemp gameInfo={game}/>
