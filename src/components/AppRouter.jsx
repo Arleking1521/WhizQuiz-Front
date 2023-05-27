@@ -9,7 +9,7 @@ import GameDetailsPage from "../pages/GameDetailsPage";
 const AppRouter = () => {
     return (
         <Routes>
-            <Route exact path={'/home'} element={<HomePage />} />
+            <Route exact path={'/'} element={<HomePage />} />
             <Route exact path={'/rules'} element={<RulesPage />} />
             <Route exact path={'/comments'} element={<CommentsPage />} />
             <Route exact path={'/about'} element={<AboutPage />} />

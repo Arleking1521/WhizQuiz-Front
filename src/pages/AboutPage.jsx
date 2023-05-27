@@ -6,7 +6,7 @@ const AboutPage = () => {
         <main>
             <div className="name_logo">
                 <div>
-                    <h1 className="name ash">EAZY QUIZY</h1>
+                    <h1 className="name ash">WHIZ QUIZ</h1>
                     <div className="map frdivst">
                         <YMaps>
                             <Map
@@ -17,14 +17,14 @@ const AboutPage = () => {
                             </Map>
                         </YMaps>
                     </div>
-                    <p>Almaty, 34A Manase str.</p>
+                    <p>Almaty, Манаса 34А.</p>
                 </div>
 
             </div>
             <div className="contact">
-            <h1 className="name ash fs">CONTACT US:</h1>
-            <p>E-mail: eazyquizy@quiz.com</p>
-            <p>Phone Number: +7 (727) 320-00-00</p>
+            <h1 className="name ash fs">НАШИ КОНТАКТЫ:</h1>
+            <p>E-mail: WhizQuiz@quiz.com</p>
+            <p>Телефон: +7 (707) 998-02-68</p>
             </div>
         </main>
     );

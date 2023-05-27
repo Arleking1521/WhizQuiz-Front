@@ -1,6 +1,6 @@
 .details{
     width: 80%;
-    height: 1200px;
+    height: 1000px;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -15,7 +15,7 @@
     width: 100%;
     height: 100px;
     font-size: 50px;
-    font-weight: 900;
+    font-weight: 700;
     color: rgb(150, 0, 0);
     text-shadow: 2px 2px 0px rgb(240, 0, 0);
     text-decoration: underline;
@@ -40,7 +40,7 @@
     justify-content: space-between;
     width: 100%;
     height: auto;
-    font-size: 50px;
+    font-size: 40px;
     font-weight: 700;
     color: rgb(200, 0, 0);
 }
@@ -49,7 +49,7 @@
     align-items: center;
     width: 100%;
     height: 25px;
-    font-size: 25px;
+    font-size: 20px;
     font-weight: 500;
     color: rgba(200, 0, 0, 0.5);
 }
@@ -59,7 +59,7 @@
     align-items: center;
     width: 100%;
     height: auto;
-    font-size: 25px;
+    font-size: 20px;
     font-weight: 700;
     color: rgb(200, 0, 0);
     margin-top: 50px;
@@ -89,8 +89,8 @@
     align-items: center;
     width: 100%;
     height: auto;
-    font-size: 25px;
-    font-weight: 500;
+    font-size: 20px;
+    font-weight: 300;
     color: rgb(200, 0, 0);
 }
 .description{
@@ -99,8 +99,8 @@
     align-items: center;
     width: 100%;
     height: auto;
-    font-size: 25px;
-    font-weight: 500;
+    font-size: 20px;
+    font-weight: 300;
     color: rgb(200, 0, 0);
     margin-top: 50px;
 }

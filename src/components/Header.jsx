@@ -16,20 +16,20 @@ const Header = () => {
                     <div className='socmed'>
                         <div className="wpp">
                             <img src={wpp} className="wpp_img" />
-                            <a href="">
-                                OUR WHATSAPP
+                            <a href="https://api.whatsapp.com/send/?phone=77079980268">
+                                WHATSAPP
                             </a>
                         </div>
                         <div className="insta">
                             <img src={inst} className="insta_img" />
-                            <a href="">
-                                OUR INSTAGRAM
+                            <a href="https://instagram.com/whizquiz.almaty?igshid=MzRlODBiNWFlZA==">
+                                INSTAGRAM
                             </a>
                         </div>
                         <div className="vk">
                             <img src={vk} className="vk_img" />
-                            <a href="">
-                                OUR VK
+                            <a href="https://vk.com/whiz.quiz">
+                                VK
                             </a>
                         </div>
                     </div>

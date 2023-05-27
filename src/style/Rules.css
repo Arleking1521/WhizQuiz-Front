@@ -4,10 +4,11 @@
     align-items: center;
     width: 300px;
     margin: 25px;
-    color: rgb(247, 161, 2);
+    color: rgb(200, 150, 0);
 }
 .top_rul{
     display: flex;
+    flex-direction: column;
     justify-content: space-between;
     align-items: center;
 }
@@ -19,10 +20,10 @@
 }
 .big_r{
     font-weight: 900;
-    font-size: 200px;
+    font-size: 150px;
     margin: 0;
     font-style: italic;
-    text-align: end;
+    text-align: center;
     text-decoration: underline;
 }
 .itl{
@@ -35,17 +36,9 @@
 }
 .mg_shadow{
     color: rgb(150, 0, 0);
-    text-shadow: 10px 10px 0px rgb(240, 0, 0);
+    text-shadow: 8px 8px 0px rgb(240, 0, 0);
 }
 .aimge{
     float: left;
     margin-right: 20px
-}
-main{
-
-    padding-right: 20%;
-    padding-left: 20%;
-    padding-top: 50px;
-    padding-bottom: 50px;
-    background-color: rgb(250, 250, 250);
 }

@@ -1,7 +1,10 @@
+@import url('https://fonts.googleapis.com/css2?family=Comfortaa:wght@300;400;500;600;700&display=swap');
+
 *{
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    font-family: 'Comfortaa', cursive;
 }
 
 #root{
@@ -12,4 +15,18 @@
 .App{
     width: 100%;
 }
+::-webkit-scrollbar{
+    width: 5px;
+}
 
+::-webkit-scrollbar-track{
+    background: rgb(255, 255, 255);
+}
+
+::-webkit-scrollbar-thumb{
+    background: rgb(200, 0, 0);
+}
+
+::-webkit-scrollbar-thumb:hover{
+    background: rgb(240, 0, 0);
+}

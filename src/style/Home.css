@@ -6,13 +6,16 @@
     color: rgb(150, 0, 0);
 }
 .name{
-    font-size: 100px;
+    display: flex;
+    font-size: 80px;
     font-weight: 900;
     font-style: italic;
     color: rgb(150, 0, 0);
     text-shadow: 5px 5px 0px rgb(240, 0, 0);
     text-decoration: underline;
     padding-bottom: 50px;
+    align-items: center;
+    justify-content: center;
 }
 .Wiaq{
     width: 700px;

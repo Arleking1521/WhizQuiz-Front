@@ -1,11 +1,4 @@
-main{
 
-    padding-right: 20%;
-    padding-left: 20%;
-    padding-top: 50px;
-    padding-bottom: 50px;
-    background-color: rgb(250, 250, 250);
-}
 .frame{
     position:relative;
 }
@@ -33,20 +26,12 @@ main{
     box-shadow: 10px 10px 0px rgb(247, 161, 2), -10px -10px 0px rgb(199, 0, 0);
 }
 
-.name{
-    font-size: 100px;
-    font-weight: bold;
-    font-style: italic;
-    color: rgb(150, 0, 0);
-    text-shadow: 5px 5px 0px rgb(240, 0, 0);
-    text-decoration: underline;
-}
-
 .contact{
     display: flex;
     flex-direction: column;
     align-items: center;
     font-size: 25px;
+    padding-bottom: 30px;
 }
 
 .ash{

@@ -7,8 +7,8 @@ const DetailsTemp = (props) => {
             <div className="welcome_banner">Добро пожаловать на квиз!</div>
             <div className="details_top">
                 <div className="announcement">
-                    <div className="game_name"> Theme: {props.gameInfo.Name} <RegPopUp name={props.gameInfo.Name}/> </div>
-                    <div className="game_date">Date: {props.gameInfo.Date}</div>
+                    <div className="game_name"> Тема: {props.gameInfo.Name} <RegPopUp name={props.gameInfo.Name}/> </div>
+                    <div className="game_date"> Дата: {props.gameInfo.Date}</div>
                     <div className="description1"> {props.gameInfo.Description}</div>
                 </div>
                 <div className="game_pic"><img src={props.gameInfo.Image} className="game_det" /></div>

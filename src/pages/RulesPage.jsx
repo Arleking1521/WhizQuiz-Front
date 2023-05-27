@@ -9,20 +9,19 @@ const RulesPage = () => {
         <main>
             <div className="top_rul">
                 <div className="left_rul">
-                    <h3 className="itl shadow1">RULES ON THE QUIZ</h3>
-                    <h1 className="itl shadow1">IN FACT, EVERYTHING IS VERY</h1>
-                    <h1 className="itl shadow1">SIMPLE</h1>
-                    <p className="itl">The most important thing for us is that you have a good time</p>
-                    <p className="itl">In addition, do not forget</p>
+                    <h3 className="itl shadow1">Правила нашего квиза</h3>
+                    <h1 className="itl shadow1">ВСЕ ОЧЕНЬ ПРОСТО</h1>
+                    <p className="itl">Самое главное для нас - это чтобы вы хорошо провели время</p>
+                    <p className="itl">Кроме того, не забывайте</p>
                     <div className="rules">
-                        <div className="rul"><img src={heart} alt="" width="40px" className='aimge' /> DO NOT INTERFERE WITH OTHERS</div>
-                        <div className="rul"><img src={chat} alt="" width="40px" className='aimge' /> DON'T SHOUT OUT ANSWERS</div>
-                        <div className="rul"><img src={phone} alt="" width="40px" className='aimge' /> DO NOT USE CALCULATORS AND OTHER GADGETS</div>
-                        <div className="rul"><img src={doc} alt="" width="40px" className='aimge' /> DO NOT WRITE OFF</div>
+                        <div className="rul"><img src={heart} alt="" width="40px" className='aimge' /> НЕ МЕШАЙТЕ ДРУГИМ ИГРОКАМ</div>
+                        <div className="rul"><img src={chat} alt="" width="40px" className='aimge' /> НЕ ВЫКРИКИВАЙТЕ ОТВЕТЫ</div>
+                        <div className="rul"><img src={phone} alt="" width="40px" className='aimge' /> НЕ ПОЛЬЗОВАТЬСЯ КАЛЬКУЛЯТОРАМИ И ДРУГИМИ ГАДЖЕТАМИ</div>
+                        <div className="rul"><img src={doc} alt="" width="40px" className='aimge' /> НЕ СПИСЫВАТЬ</div>
                     </div>
                 </div>
             </div>
-            <p className="big_r mg_shadow">RULES</p>
+            <p className="big_r mg_shadow">ПРАВИЛА</p>
         </main>
     );
 };
