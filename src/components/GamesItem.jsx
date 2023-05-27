@@ -1,5 +1,5 @@
 import React from 'react';
-import PopUp from "./PopUp";
+import RegPopUp from "./RegPopUp";
 import {useNavigate} from "react-router-dom";
 const GamesItem = (props) => {
     const navigate = useNavigate();
@@ -9,7 +9,7 @@ const GamesItem = (props) => {
     return (
         <div className="gameItem">
             <div className="games" onClick={handleDetailsClick}><img src={props.game.Image} className="game" /></div>
-            <div><PopUp name={props.game.Name} /></div>
+            <div><RegPopUp name={props.game.Name} /></div>
         </div>
     );
 };

@@ -1,6 +1,6 @@
 import React from 'react';
 import "../style/Details.css"
-import PopUp from "./PopUp";
+import RegPopUp from "./RegPopUp";
 const DetailsTemp = (props) => {
     console.log(props);
     return (
@@ -8,7 +8,7 @@ const DetailsTemp = (props) => {
             <div className="welcome_banner">Добро пожаловать на квиз!</div>
             <div className="details_top">
                 <div className="announcement">
-                    <div className="game_name"> Theme: {props.gameInfo.Name} <PopUp name={props.gameInfo.Name}/> </div>
+                    <div className="game_name"> Theme: {props.gameInfo.Name} <RegPopUp name={props.gameInfo.Name}/> </div>
                     <div className="game_date">Date: {props.gameInfo.Date}</div>
                     <div className="description1"> {props.gameInfo.Description}</div>
                 </div>
