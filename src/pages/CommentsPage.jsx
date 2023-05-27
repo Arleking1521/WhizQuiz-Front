@@ -1,4 +1,4 @@
-import React, {useEffect, useRef, useState} from 'react';
+import React, {useEffect, useMemo, useState} from 'react';
 import {useFetching} from "../hookes/useFetching";
 import CommentsService from "../API/CommentsService";
 import Loader from "../UI/Loader/Loader";
@@ -6,7 +6,7 @@ import CommentsList from "../components/CommentsList";
 import "../style/Comments.css"
 import CommentPopUp from "../components/CommentPopUp";
 import MySelect from "../UI/MySelect/MySelect";
-import {compareAsc, parseISO} from "date-fns";
+
 const CommentsPage = () => {
     const [comments, setComments] = useState([])
 
@@ -16,43 +16,70 @@ const CommentsPage = () => {
     })
 
     useEffect(() => {
-        fetchComments();
-    }, [])
+        const storedComments = localStorage.getItem('comments');
+        if (storedComments) {
+            setComments(JSON.parse(storedComments));
+        } else {
+            fetchComments();
+        }
+    }, []);
 
     const createComment = (newComment) => {
-        setComments([...comments, newComment])
+        const updatedComments = [...comments, newComment];
+        setComments(updatedComments);
+        localStorage.setItem('comments', JSON.stringify(updatedComments));
     }
 
-    const removeComment = (comment) =>{
-        setComments(comments.filter(p => p.id !== comment.id))
+    const removeComment = (comment) => {
+        const updatedComments = comments.filter(p => p.id !== comment.id);
+        setComments(updatedComments);
+        localStorage.setItem('comments', JSON.stringify(updatedComments));
     }
 
     const [selectedSort, setSelectedSort] = useState('')
+
     const sortComments = (sort) => {
         setSelectedSort(sort)
-        switch (sort){
+        switch (sort) {
             case 'Name':
-                setComments([...comments].sort((a,b) => a[sort].localeCompare(b[sort])));
+                setComments([...comments].sort((a, b) => a[sort].localeCompare(b[sort])));
                 break;
             default:
-                setComments([...comments].sort((a,b) => a.id.localeCompare(b.id)));
+                setComments([...comments].sort((a, b) => {
+                    const dateA = new Date(
+                        Number(a[sort].slice(6, 10)),
+                        Number(a[sort].slice(3, 5)) - 1,
+                        Number(a[sort].slice(0, 2))
+                    )
+                    const dateB = new Date(
+                        Number(b[sort].slice(6, 10)),
+                        Number(b[sort].slice(3, 5)) - 1,
+                        Number(b[sort].slice(0, 2))
+                    )
+                    return dateA - dateB
+                }));
                 break;
         }
 
     }
 
+
     return (
         <div className="comments">
-            <CommentPopUp create={createComment}/>
-            <div>
-                <MySelect
-                    value={selectedSort}
-                    onChange={sortComments}
-                    defaultValue="По умолчанию"
-                    option={[
-                        {value: 'Name', name: "По имени"},
-                    ]}
-                />
+            <div className="control_div">
+                <CommentPopUp create={createComment}/>
+                <div>
+                    <MySelect
+                        value={selectedSort}
+                        onChange={sortComments}
+                        defaultValue="По умолчанию"
+                        option={[
+                            {value: 'Date', name: "По дате"},
+                            {value: 'Name', name: "По имени"}
+
+                        ]}
+                    />
+                </div>
             </div>
             {
                 commentsError && <div className="load">${commentsError}</div>

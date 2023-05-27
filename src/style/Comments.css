@@ -8,6 +8,17 @@
     align-items: center;
     justify-content: center;
 }
+.control_div{
+    width: 80%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+.com_popUp{
+    display: flex !important;
+    align-items: center !important;
+}
 .com_list{
     width: 80%;
     height: auto;
@@ -24,8 +35,8 @@
     margin-top: 20px;
     margin-bottom: 20px;
     border-radius: 10px;
-    border: solid 1px rgb(200, 0, 0);
-    box-shadow:  -3px -3px 10px rgba(255, 0, 0, 0.514), inset -3px -3px 10px rgba(255, 0, 0, 0.514);
+    border: solid 1px rgb(255, 0, 0);
+    box-shadow:  -3px -3px 10px rgba(255, 0, 0, 0.6), inset -3px -3px 10px rgba(255, 0, 0, 0.6);
 }
 .cont{
     display: flex;
