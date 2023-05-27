@@ -2,7 +2,7 @@ import React from 'react';
 import {Navbar} from "react-bootstrap";
 import wpp_f from '../assets/wpp.png'
 import inst_f from '../assets/inst.png'
-import vk_f from '../assets/vk.png'
+import vk_f from '../assets/vk.svg'
 import Logo from '../assets/logoWhizQuiz.jpg'
 import {Link} from "react-router-dom";
 import "../style/Footer.css"
