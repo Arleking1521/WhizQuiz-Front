@@ -10,35 +10,35 @@ const PopUp = (props) => {
     return (
         <div>
 
-            <MyButton onClick={handleShow}>BOOKING</MyButton>
+            <MyButton onClick={handleShow}>Регистрация</MyButton>
 
             <Modal show={show} onHide={handleClose}>
                 <Modal.Header closeButton>
-                    <Modal.Title>Registration to game {props.name}</Modal.Title>
+                    <Modal.Title>Регистрация на игру: {props.name}</Modal.Title>
                 </Modal.Header>
                 <Modal.Body>
                     <Form>
                         <Form.Group className="mb-3" controlId="exampleForm.ControlInput1">
-                            <Form.Label>Team Name</Form.Label>
+                            <Form.Label>Название команды</Form.Label>
                             <Form.Control
                                 type="name"
-                                placeholder="Enter your team name"
+                                placeholder="Название команды"
                                 autoFocus
                             />
                         </Form.Group>
                         <Form.Group className="mb-3" controlId="exampleForm.ControlInput">
-                            <Form.Label>City</Form.Label>
+                            <Form.Label>Город</Form.Label>
                             <Form.Control
                                 type="city"
-                                placeholder="Enter your city"
+                                placeholder="Город"
                                 autoFocus
                             />
                         </Form.Group>
                         <Form.Group className="mb-3" controlId="exampleForm.ControlInput3">
-                            <Form.Label>Phone number</Form.Label>
+                            <Form.Label>Номер телефона</Form.Label>
                             <Form.Control
                                 type="Number"
-                                placeholder="Enter your phone number"
+                                placeholder="Номер телефона"
                                 autoFocus
                             />
                         </Form.Group>
@@ -46,7 +46,7 @@ const PopUp = (props) => {
                 </Modal.Body>
                 <Modal.Footer>
                     <MyButton onClick={handleClose}>
-                        Save information
+                        Сохранить
                     </MyButton>
                 </Modal.Footer>
             </Modal>

@@ -3,6 +3,8 @@ import {useParams} from "react-router-dom";
 import {useFetching} from "../hookes/useFetching";
 import GamesService from "../API/GamesService";
 import Loader from "../UI/Loader/Loader";
+import DetailsTemp from "../components/DetailsTemp";
+import "../style/Load.css"
 
 const GameDetailsPage = () => {
     const params = useParams()
@@ -14,12 +16,12 @@ const GameDetailsPage = () => {
     useEffect(() =>{
         fetchGameById(params.id);
     }, [])
+    console.log(game);
     return (
-        <div>
-            {isLoading ? <Loader/> :
+        <div >
+            {isLoading ? <div className="load"><Loader/></div> :
                 <div>
-                    ID = {game.id}
-                    {game.Name}
+                    <DetailsTemp gameInfo={game}/>
                 </div>}
 
         </div>

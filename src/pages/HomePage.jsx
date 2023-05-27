@@ -1,7 +1,8 @@
 import React, {useEffect, useState} from 'react';
 import Logo from "../assets/logoWhizQuiz.jpg";
 import {Container} from "react-bootstrap";
-import "../style/home.css"
+import "../style/Home.css"
+import "../style/Load.css"
 import GamesService from "../API/GamesService";
 import GamesList from "../components/GamesList";
 import Loader from "../UI/Loader/Loader";
@@ -22,11 +23,11 @@ const HomePage = () => {
         <Container className='main'>
             <div className='name_logo'>
                 <div>
-                    <div className="name" >What is a quiz?</div>
+                    <div className="name" >Что такое квизы?</div>
                     <p className='Wiaq'>
-                        In a nutshell, this is an intellectual and entertaining competition.
-                        Thematic, classical, musical, movie or sports quiz.
-                        You are asked questions and you answer them, the more correct answers, the more chances to win.</p>
+                        В двух словах, это интеллектуальное и развлекательное соревнование.
+                        Тематическая, классическая, музыкальная, киношная или спортивная викторина.
+                        Вам задают вопросы, и вы на них отвечаете, чем больше правильных ответов, тем больше шансов на победу.</p>
                 </div>
                 <div>
                     <img src={Logo} className='home_logo'/>

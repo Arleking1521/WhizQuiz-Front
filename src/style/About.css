@@ -32,13 +32,7 @@ main{
 .map{
     box-shadow: 10px 10px 0px rgb(247, 161, 2), -10px -10px 0px rgb(199, 0, 0);
 }
-.name_logo{
-    display: flex;
-    justify-content: space-around;
-    align-content: center;
-    margin-bottom: 50px;
-    color: var(--p);
-}
+
 .name{
     font-size: 100px;
     font-weight: bold;

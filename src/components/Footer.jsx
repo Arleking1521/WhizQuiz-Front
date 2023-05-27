@@ -16,10 +16,10 @@ const Footer = () => {
                     <div className="li_text">
                         <p>© 2023. WhizQuiz Inc.</p>
                         <div>
-                            <Link to={'/home'}> Home </Link>|
-                            <Link to={'/rules'}> Rules </Link>|
-                            <Link to={'/comments'}> Comments </Link>|
-                            <Link to={'/about'}> About Us </Link>
+                            <Link to={'/home'}> Главная </Link>|
+                            <Link to={'/rules'}> Правила </Link>|
+                            <Link to={'/comments'}> Отзывы </Link>|
+                            <Link to={'/about'}> О нас </Link>
                         </div>
                     </div>
                 </div>

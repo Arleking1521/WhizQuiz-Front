@@ -6,10 +6,10 @@ const NavBar = () => {
     return (
         <Navbar.Collapse id='responsive-navbar-nav' align-right>
             <div className='menu'>
-                <Link to={'/home'} > HOME </Link>
-                <Link to={'/rules'}> RULES </Link>
-                <Link to={'/comments'}> COMMENTS </Link>
-                <Link to={'/about'}> ABOUT US </Link>
+                <Link to={'/home'} > ГЛАВНАЯ </Link>
+                <Link to={'/rules'}> ПРАВИЛА </Link>
+                <Link to={'/comments'}> ОТЗЫВЫ </Link>
+                <Link to={'/about'}> О НАС </Link>
             </div>
         </Navbar.Collapse>
     );
