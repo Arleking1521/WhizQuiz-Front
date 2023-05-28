@@ -18,7 +18,7 @@ const CommentPopUp = ({create}) => {
         const [_, month, day, year] = dateString.split(' ');
         const Comment = commentInputRef.current.value;
         if (Name.trim() === "" || Comment.trim() === "") {
-            if(Name.trim() === ""){
+            if (Name.trim() === "") {
                 Swal.fire({
                     title: 'Желаете оставить анонимный отзыв?',
                     text: 'Вы не ввели имени',
@@ -33,8 +33,7 @@ const CommentPopUp = ({create}) => {
                         setName('')
                     }
                 });
-            }
-            else{
+            } else {
                 Swal.fire({
                     title: 'Передумали оставлять отзыв?',
                     text: 'Вы не написали отзыв',
@@ -77,7 +76,7 @@ const CommentPopUp = ({create}) => {
                 <Modal.Body className="com_body">
                     {/* controlled component*/}
                     <div className="popUpInput">
-                        <label >Имя:</label>
+                        <label>Имя:</label>
                         <MyInput
                             value={Name}
                             onChange={e => setName(e.target.value)}
@@ -87,7 +86,7 @@ const CommentPopUp = ({create}) => {
                     </div>
                     {/*Uncontrolled component*/}
                     <div className="popUpInput">
-                        <label >Отзыв:</label>
+                        <label>Отзыв:</label>
                         <textarea
                             className="commentInput"
                             ref={commentInputRef}

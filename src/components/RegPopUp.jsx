@@ -17,32 +17,32 @@ const RegPopUp = (props) => {
                 <Modal.Header closeButton>
                     <div className="popUpRegHead">Регистрация на игру: {props.name}</div>
                 </Modal.Header>
-                <Modal.Body >
+                <Modal.Body>
 
-                        <div className="popUpInput" >
-                            <label>Название команды:</label>
-                            <MyInput
-                                type="teamName"
-                                placeholder="Введите имя вашей команды"
-                            />
-                        </div>
-                        <div className="popUpSelect" >
-                            <label>Город:</label>
-                            <MySelect
-                                defaultValue="По умолчанию"
-                                option={[
-                                    {value: 'Almaty', name: "Алматы"},
-                                    {value: 'Astana', name: "Астана"}
-                                ]}
-                            />
-                        </div>
-                        <div className="popUpInput">
-                            <label>Номер телефона:</label>
-                            <MyInput
-                                type="phone"
-                                placeholder="Введите номер телефона"
-                            />
-                        </div>
+                    <div className="popUpInput">
+                        <label>Название команды:</label>
+                        <MyInput
+                            type="teamName"
+                            placeholder="Введите имя вашей команды"
+                        />
+                    </div>
+                    <div className="popUpSelect">
+                        <label>Город:</label>
+                        <MySelect
+                            defaultValue="По умолчанию"
+                            option={[
+                                {value: 'Almaty', name: "Алматы"},
+                                {value: 'Astana', name: "Астана"}
+                            ]}
+                        />
+                    </div>
+                    <div className="popUpInput">
+                        <label>Номер телефона:</label>
+                        <MyInput
+                            type="phone"
+                            placeholder="Введите номер телефона"
+                        />
+                    </div>
 
                 </Modal.Body>
                 <Modal.Footer>
