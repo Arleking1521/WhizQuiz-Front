@@ -5,6 +5,7 @@ import RulesPage from "../pages/RulesPage";
 import CommentsPage from "../pages/CommentsPage";
 import AboutPage from "../pages/AboutPage";
 import GameDetailsPage from "../pages/GameDetailsPage";
+import Login from "../pages/Login";
 
 const AppRouter = () => {
     return (
@@ -14,6 +15,7 @@ const AppRouter = () => {
             <Route exact path={'/comments'} element={<CommentsPage/>}/>
             <Route exact path={'/about'} element={<AboutPage/>}/>
             <Route exact path={'/details/:id'} element={<GameDetailsPage/>}/>
+            <Route exact path={'/login'} element={<Login/>}/>
         </Routes>
     );
 };

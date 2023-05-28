@@ -19,6 +19,12 @@
     text-decoration: none;
     padding: 10px 15px;
 }
+.menu a:active {
+    color: white;
+    font-weight: 900;
+    text-decoration: none;
+    padding: 10px 15px;
+}
 
 .h-name {
     letter-spacing: 5px;
