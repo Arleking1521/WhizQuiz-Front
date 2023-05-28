@@ -38,7 +38,7 @@ const HomePage = () => {
                 gamesError && <div className="load">${gamesError}</div>
             }
             {isGamesLoading ? <div className="load"><Loader/></div> :
-                games.length ? <GamesList games={games}/> : <div className="f_games">Нет заплатированных игр!</div>
+                games.length ? <GamesList games={games}/> : <div className="f_games">Нет запланированных игр!</div>
             }
 
 

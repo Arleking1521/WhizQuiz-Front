@@ -78,8 +78,29 @@
     margin-top: 60px;
     z-index: -99999999;
 }
-
-
+.popUpRegHead{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: auto;
+    font-size: 27px;
+    color: rgb(200, 0, 0);
+}
+.popUpInput{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    height: auto;
+    margin-bottom: 20px;
+}
+.popUpSelect{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    height: auto;
+    margin-bottom: 20px;
+}
 .home_logo {
     height: 370px;
     width: 370px;

@@ -32,20 +32,30 @@ const CommentPopUp = ({create}) => {
             <MyButton onClick={handleShow}>Оставить отзыв</MyButton>
 
             <Modal className="com_popUp" show={show} onHide={handleClose}>
-                <Modal.Body>
+                <Modal.Header closeButton>
+                    <div className="popUpHead">Спасибо за ваш отзыв!</div>
+                </Modal.Header>
+                <Modal.Body className="com_body">
                     {/* controlled component*/}
-                    <MyInput
-                        value={Name}
-                        onChange={e => setName(e.target.value)}
-                        type="name"
-                        placeholder="Введите ваше имя"
-                    />
+                    <div className="popUpInput">
+                        <label >Имя:</label>
+                        <MyInput
+                            value={Name}
+                            onChange={e => setName(e.target.value)}
+                            type="name"
+                            placeholder="Введите ваше имя"
+                        />
+                    </div>
                     {/*Uncontrolled component*/}
-                    <MyInput
-                        ref={commentInputRef}
-                        type="name"
-                        placeholder="Отзыв"
-                    />
+                    <div className="popUpInput">
+                        <label >Отзыв:</label>
+                        <textarea
+                            className="commentInput"
+                            ref={commentInputRef}
+                            type="comment"
+                            placeholder="Отзыв"
+                        />
+                    </div>
                     <MyButton onClick={addNewComment}>Сохранить</MyButton>
                 </Modal.Body>
             </Modal>

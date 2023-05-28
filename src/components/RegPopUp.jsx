@@ -1,7 +1,8 @@
 import React, {useState} from 'react';
 import Modal from "react-bootstrap/Modal";
-import Form from "react-bootstrap/Form";
 import MyButton from "../UI/Button/MyButton";
+import MyInput from "../UI/Input/MyInput";
+import MySelect from "../UI/MySelect/MySelect";
 
 const RegPopUp = (props) => {
     const [show, setShow] = useState(false);
@@ -14,35 +15,35 @@ const RegPopUp = (props) => {
 
             <Modal show={show} onHide={handleClose}>
                 <Modal.Header closeButton>
-                    <Modal.Title>Регистрация на игру: {props.name}</Modal.Title>
+                    <div className="popUpRegHead">Регистрация на игру: {props.name}</div>
                 </Modal.Header>
-                <Modal.Body>
-                    <Form>
-                        <Form.Group className="mb-3" controlId="exampleForm.ControlInput1">
-                            <Form.Label>Название команды</Form.Label>
-                            <Form.Control
-                                type="name"
-                                placeholder="Название команды"
-                                autoFocus
+                <Modal.Body >
+
+                        <div className="popUpInput" >
+                            <label>Название команды:</label>
+                            <MyInput
+                                type="teamName"
+                                placeholder="Введите имя вашей команды"
                             />
-                        </Form.Group>
-                        <Form.Group className="mb-3" controlId="exampleForm.ControlInput">
-                            <Form.Label>Город</Form.Label>
-                            <Form.Control
-                                type="city"
-                                placeholder="Город"
-                                autoFocus
+                        </div>
+                        <div className="popUpSelect" >
+                            <label>Город:</label>
+                            <MySelect
+                                defaultValue="По умолчанию"
+                                option={[
+                                    {value: 'Almaty', name: "Алматы"},
+                                    {value: 'Astana', name: "Астана"}
+                                ]}
                             />
-                        </Form.Group>
-                        <Form.Group className="mb-3" controlId="exampleForm.ControlInput3">
-                            <Form.Label>Номер телефона</Form.Label>
-                            <Form.Control
-                                type="Number"
-                                placeholder="Номер телефона"
-                                autoFocus
+                        </div>
+                        <div className="popUpInput">
+                            <label>Номер телефона:</label>
+                            <MyInput
+                                type="phone"
+                                placeholder="Введите номер телефона"
                             />
-                        </Form.Group>
-                    </Form>
+                        </div>
+
                 </Modal.Body>
                 <Modal.Footer>
                     <MyButton onClick={handleClose}>
