@@ -1,6 +1,6 @@
 import React from 'react';
 import "../style/About.css"
-import {Placemark, YMaps, Map} from "react-yandex-map";
+import {Placemark, YMaps, Map} from "react-yandex-maps";
 
 const AboutPage = () => {
     return (
