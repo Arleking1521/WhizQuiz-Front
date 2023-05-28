@@ -1,0 +1,61 @@
+.Log_cont{
+    display:flex;
+    justify-content: space-around;
+    width: 500px;
+    height: auto;
+}
+.row_t{
+    display:flex;
+    justify-content: space-around;
+    width: 400px;
+}
+.tabsIt{
+    font-size: 20px;
+    height: 100px;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    align-items: center;
+}
+.tabsIt a{
+    color: red;
+    font-weight: bolt;
+    text-decoration: none;
+    padding: 10px 15px;
+}
+.tabsIt a:active{
+    color: white;
+    background:rgb(240, 0, 0);
+}
+.my-tabs{
+    color: red;
+    background: white;
+    font-weight: bolt;
+    text-decoration: none;
+    padding: 10px 15px;
+}
+.clicked{
+    color: white!important;
+    background:rgb(240, 0, 0) !important;
+}
+.content{
+    border: 1px solid red;
+    border-radius: 10px;
+    background:  rgba(255, 200, 200, 0.5);
+    height: auto;
+    width: 400px;
+    margin-bottom: 50px;
+    padding: 25px;
+}
+.text{
+    font-size:20px;
+}
+.button{
+    color: rgb(247,161,2);
+}
+.back_img{
+    border-radius: 50%;
+    margin-left:21%;
+    width:200px;
+    filter: opacity(70%);
+}
