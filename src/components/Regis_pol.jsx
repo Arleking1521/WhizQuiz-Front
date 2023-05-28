@@ -1,7 +1,7 @@
-import React, { Component } from 'react';
-import { Form, Button } from 'react-bootstrap';
-import MyInput from "../UI/Input/MyInput";
+import React, {Component} from 'react';
+import {Form} from 'react-bootstrap';
 import MyButton from "../UI/Button/MyButton";
+import MyInput from "../UI/Input/MyInput";
 
 export default class Regis_pol extends Component {
     render() {
@@ -12,13 +12,12 @@ export default class Regis_pol extends Component {
                     <MyInput type="name" placeholder="Введите ваше имя"/>
                     <label>Фамилия</label>
                     <MyInput type="surname" placeholder="Введите вашу фамилию"/>
-                    <label>E-mail</label>
-                    <MyInput type="email" placeholder="Введите вашу почту"/>
+                    <label>Email</label>
+                    <MyInput type="email" placeholder="Введите email"/>
                     <label>Пароль</label>
-                    <MyInput type="password" placeholder="Придумайте надежный пароль"/>
+                    <MyInput type="password1" placeholder="Введите пароль"/>
                     <label>Повторите пароль</label>
-                    <MyInput type="password" placeholder="Повторите пароль"/>
-                    <hr/>
+                    <MyInput type="password2" placeholder="Повторите пароль"/>
                     <MyButton>
                         Зарегистрироваться
                     </MyButton>

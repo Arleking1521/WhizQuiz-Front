@@ -10,7 +10,6 @@ import NavBar from "./NavBar";
 
 const Header = () => {
     return (
-
         <Navbar collapseOnSelect expand="md" className='header'>
             <Container className='top'>
                 <div className='socmed'>
@@ -45,7 +44,9 @@ const Header = () => {
                     <div>
                         <NavBar/>
                     </div>
+
                     <Navbar.Toggle aria-controls='responsive-navbar-nav'/>
+
                 </div>
             </Container>
         </Navbar>

@@ -1,21 +1,30 @@
-import React, {Component} from 'react'
-import {Form, Button} from 'react-bootstrap'
-import Logo from '../assets/logoWhizQuiz.jpg'
+import React, {useContext} from 'react'
+import {Form} from 'react-bootstrap'
 import MyButton from "../UI/Button/MyButton";
 import MyInput from "../UI/Input/MyInput";
+import {AuthContext} from "../context";
 
-export default class Log_pol extends Component {
-    render() {
-        return (
-            <>
-                <Form className='text'>
-                    <label>E-mail</label>
-                    <MyInput type="email" placeholder="Введите вашу почту"/>
-                    <label>Пароль</label>
-                    <MyInput type="password" placeholder="Пароль"/>
-                    <MyButton>Войти</MyButton>
-                </Form>
-            </>
-        )
+const Log_pol = () => {
+    const {isAuth, setIsAuth} = useContext(AuthContext)
+    const login = event => {
+        event.preventDefault();
+        setIsAuth(true);
+        localStorage.setItem('auth', 'true')
     }
+    return (
+        <>
+            <Form className='text' onSubmit={login}>
+                <label>Email </label>
+                <MyInput type="email" placeholder="Введите email"/>
+                <label>Пароль</label>
+                <MyInput type="password" placeholder="Введите пароль"/>
+                <MyButton>
+                    Войти
+                </MyButton>
+
+            </Form>
+        </>
+    )
+
 }
+export default Log_pol;

@@ -1,5 +1,4 @@
 import React from 'react';
-import {Navbar} from "react-bootstrap";
 import wpp_f from '../assets/wpp.png'
 import inst_f from '../assets/inst.png'
 import vk_f from '../assets/vk.svg'
@@ -16,7 +15,7 @@ const Footer = () => {
                     <div className="li_text">
                         <p>© 2023. WhizQuiz.</p>
                         <div>
-                            <Link to={'/'}> Главная </Link>|
+                            <Link to={'/home'}> Главная </Link>|
                             <Link to={'/rules'}> Правила </Link>|
                             <Link to={'/comments'}> Отзывы </Link>|
                             <Link to={'/about'}> О нас </Link>
