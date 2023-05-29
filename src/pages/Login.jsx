@@ -1,12 +1,17 @@
-import React, {Component} from 'react'
+import React, {useState} from 'react'
 import {Col, Container, Nav, Row, Tab,} from 'react-bootstrap'
 import Log_pol from '../components/Log_pol'
 import Regis_pol from '../components/Regis_pol'
 import '../style/Login.css'
 
-export default class Login extends Component {
-    render() {
+const Login = () => {
 
+        const [user, setUser] = useState([]);
+        const addUser = (newUser) => {
+            const updatedUsers = [...user, newUser];
+            setUser(updatedUsers);
+            console.log(newUser);
+        }
         return (
             <Container className='Log_cont'>
                 <div>
@@ -28,7 +33,7 @@ export default class Login extends Component {
                                         <Log_pol/>
                                     </Tab.Pane>
                                     <Tab.Pane eventKey='register'>
-                                        <Regis_pol/>
+                                        <Regis_pol create={addUser}/>
                                     </Tab.Pane>
                                 </Tab.Content>
                             </Row>
@@ -37,5 +42,7 @@ export default class Login extends Component {
                 </div>
             </Container>
         )
-    }
+
 }
+
+export default Login;
