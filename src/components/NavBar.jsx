@@ -16,7 +16,6 @@ const NavBar = () => {
                 <Link to={'/home'}> ГЛАВНАЯ </Link>
                 <Link to={'/rules'}> ПРАВИЛА </Link>
                 <Link to={'/comments'}> ОТЗЫВЫ </Link>
-                <Link to={'/about'}> О НАС </Link>
             </div>
             <MyButton onClick={logout}>
                 Выйти
